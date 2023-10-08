@@ -1,0 +1,425 @@
+html {
+    margin: 0;
+    display: block;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 130px;
+    /* background-color: black; */
+}
+
+.top-menu a:hover {
+    color: red;
+}
+
+.top-menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.top-menu-left {
+    padding-left: 160px;
+    padding-top: 10px;
+}
+
+.top-menu-left a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.top-menu-left span {
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.top-menu-right {
+    padding-top: 9px;
+    padding-right: 175px;
+}
+
+.top-menu-right a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.top-menu-right span {
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+/* bottom menu */
+.bot-menu a:hover {
+    background-color: #e1182c;
+    color: white;
+}
+
+.bot-menu {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-menu-left {
+    width: 25%;
+    padding-left: 185px;
+}
+
+.bot-menu-left img {
+    height: 90px;
+    padding-top: 10px;
+}
+
+.bot-menu-mid {
+    width: 50%;
+}
+
+.menu-5-items {
+
+    display: block;
+    padding: 20px;
+}
+
+.menu-9-items {
+    display: block;
+    justify-content: center;
+}
+
+.menu-5-items .dropdown {
+    min-width: 130px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: absolute;
+    top: 40px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 25px 50px -12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-5-items li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 6px;
+}
+
+.menu-5-items .dropdown a {
+    font-size: 14px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+}
+
+.menu-5-items a {
+    text-decoration-line: none;
+    color: black;
+    font-family: Arial;
+    display: inline-table;
+    padding: 5px;
+}
+
+.menu-5-items ul {
+    text-align: center;
+}
+
+.menu-5-items ul li {
+    display: inline-table;
+}
+
+.menu-4-items {
+    display: block;
+    text-align: center;
+}
+
+.menu-4-items li {
+    list-style: none;
+}
+
+.menu-4-items a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.menu-4-items ul li {
+    display: inline-block;
+}
+
+.bot-menu-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15%;
+}
+
+.bot-menu-right a {
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.slider {
+    width: 100%;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+
+.slider .list img {
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.slider .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider .dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.slider .dots li.active {
+    width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 400px;
+    }
+}
+
+#product-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+/* .aside-left {
+    width: 20%;
+    background-color: #fff;
+} */
+
+.pro-class {
+    display: flex;
+
+}
+
+.van-classic {
+    display: flex;
+}
+
+.Pic img {
+    width: 275px;
+    height: 410px;
+    object-fit: cover;
+    opacity: 80%;
+    background-image: linear-gradient(0, rgba(83, 82, 87, 0, 5), rgba(87, 82, 83, 0, 5));
+}
+
+.Pic {
+    margin-right: 20px;
+}
+
+.Pro-menu img {
+    height: 265px;
+    width: 265px;
+}
+
+.Pro-view img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    width: 80px;
+}
+
+.Pro-name {
+    text-align: center;
+    font-weight: lighter;
+}  
+.Pro-cost {
+    text-align: center;
+    color: red;
+}
+.vans1{
+    padding-right: 30px;
+}
+.vans2 {
+    padding-right: 30px; 
+}
+.footer {
+    height: 635px;
+}
+.footer-top{
+    height: 50%;
+    background-image: url(img/maxresdefault.jpg);
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    object-fit: cover;
+}
+form{
+    text-align: center;
+    color: white;
+}
+form h3{
+    padding-top: 65px;
+    font-size: 22px;
+    
+}
+form h5{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.form-mail{
+    display: flex;
+    justify-content: center;
+}
+.form-mail div {
+    width: 600px;
+}
+.form-mail input{
+    height: 50px;
+    width: 520px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    outline: #F2F2F2;
+    padding-left: 20px;
+    color: rgb(212, 208, 208);
+}
+.form-mail button{
+    height: 50px;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    background-color: rgb(153, 6, 6) ;
+    color: white;
+    cursor: pointer;
+    margin-left: -40px;
+}
+.footer-mid{
+    height: 41%;
+    background-color: rgb(23, 22, 22);
+}
+.discription{
+    display: flex;
+    justify-items:auto;
+}
+.trai-nghiem{
+    width: 30%;
+    padding-top: 45px;
+    padding-left: 130px;
+}
+.trai-nghiem h4{
+    color: white;
+}
+.trai-nghiem p {
+    color: grey;
+    font-weight: 900px;
+    padding-top: 10px;
+}
+.about-our{
+    width: 25%;
+    padding-top: 45px;
+    padding-left: 100px;
+}
+.about-our h4{
+    color: white;
+}
+.about-our a{
+    color: grey;
+    font-weight: 900px;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 10px;   
+}
+.chinh-sach{
+    width: 25%;
+    padding-top: 45px;
+    padding-left: 70px;
+}
+.chinh-sach h4{
+    color: white;
+}
+.chinh-sach a{
+    color: grey;
+    font-weight:900px;
+    text-decoration: none;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.footer-bottom{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    height: 9%;
+    padding-top: 20px;
+}
+.chu-do{
+    color: red;
+}
+
